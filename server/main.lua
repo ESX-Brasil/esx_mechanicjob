@@ -264,10 +264,10 @@ AddEventHandler('esx_mechanicjob:getStockItem', function(itemName, count)
 		local item = inventory.getItem(itemName)
 		local sourceItem = xPlayer.getInventoryItem(itemName)
 
-		-- is there enough in the society?
+		-- há bastante na sociedade?
 		if count > 0 and item.count >= count then
 
-			-- can the player carry the said amount of x item?
+			-- o jogador pode carregar a referida quantidade de item x?
 			if sourceItem.limit ~= -1 and (sourceItem.count + count) > sourceItem.limit then
 				TriggerClientEvent('esx:showNotification', xPlayer.source, _U('player_cannot_hold'))
 			else

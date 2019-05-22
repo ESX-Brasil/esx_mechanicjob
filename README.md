@@ -1,35 +1,35 @@
 # esx_mechanicjob
 
-## Requirements
+## requisitos
 
-* Auto mode
-  * No need to download another resource
+* Modo automático
+  * Não há necessidade de baixar outro recurso
 
-* Player management (billing and boss actions)
-  * [esx_society](https://github.com/ESX-Org/esx_society)
-  * [esx_billing](https://github.com/ESX-Org/esx_billing)
+* Gerenciamento de jogadores (ações de cobrança e chefe)
+  * [esx_society](https://github.com/ESX-Brasil/esx_society)
+  * [esx_billing](https://github.com/ESX-Brasil/esx_billing)
 
-## Download & Installation
+## Download e Instalação
 
-### Using [fvm](https://github.com/qlaffont/fvm-installer)
+### utilização [fvm](https://github.com/qlaffont/fvm-installer)
 ```
-fvm install --save --folder=esx esx-org/esx_mechanicjob
+fvm install --save --folder=esx ESX-Brasil/esx_mechanicjob
 ```
 
-### Using Git
+### Usando o Git
 ```
 cd resources
-git clone https://github.com/ESX-Org/esx_mechanicjob [esx]/esx_mechanicjob
+git clone https://github.com/ESX-Brasil/esx_mechanicjob [esx]/esx_mechanicjob
 ```
 
-### Manually
-- Download https://github.com/ESX-Org/esx_mechanicjob/archive/master.zip
-- Put it in the `[esx]` directory
+### manualmente
+- Download https://github.com/ESX-Brasil/esx_mechanicjob/archive/master.zip
+- Coloque em seu diretorio `[esx]`
 
-## Installation
-- Import `esx_mechanicjob.sql` in your database
-- If you want player management you have to set `Config.EnablePlayerManagement` to `true` in `config.lua`
-- Add this to your `server.cfg`:
+## instalação
+- Importer `esx_mechanicjob.sql` para seu banco de dados
+- Se você quiser um jogador `Config.EnablePlayerManagement` para `true` em `config.lua`
+- Add isto em seu `server.cfg`:
 
 ```
 start esx_mechanicjob
